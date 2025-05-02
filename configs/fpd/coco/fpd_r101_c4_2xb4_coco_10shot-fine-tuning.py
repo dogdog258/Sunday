@@ -17,15 +17,16 @@ data = dict(
         )),
     model_init=dict(num_novel_shots=10, num_base_shots=10))
 
-evaluation = dict(interval=1000)
-checkpoint_config = dict(interval=1000)
+evaluation = dict(interval=10000)
+checkpoint_config = dict(interval=10000)
 optimizer = dict(lr=0.001)
 lr_config = dict(warmup_iters=200)
 runner = dict(max_iters=10000)
 
 # load_from = 'path of base training model'
-load_from = \
-    'work_dirs/fpd_r101_c4_2xb4_coco_base-training/latest.pth'
+# load_from = \
+#     'work_dirs/fpd_r101_c4_2xb4_coco_base-training/latest.pth'
+load_from = 'save/coco/fpd_r101_c4_2xb4_coco_base-training_iter_110000.pth'
 
 # model settings
 model = dict(

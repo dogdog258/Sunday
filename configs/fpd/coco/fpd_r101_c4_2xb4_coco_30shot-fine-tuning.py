@@ -24,8 +24,9 @@ lr_config = dict(warmup=None)
 runner = dict(max_iters=18000)
 
 # load_from = 'path of base training model'
-load_from = \
-    'work_dirs/fpd_r101_c4_2xb4_coco_base-training/latest.pth'
+# load_from = \
+#     'work_dirs/fpd_r101_c4_2xb4_coco_base-training/latest.pth'
+load_from = 'save/coco/fpd_r101_c4_2xb4_coco_base-training_iter_110000.pth'
 
 model = dict(
     with_refine=True,
